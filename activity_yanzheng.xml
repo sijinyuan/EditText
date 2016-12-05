@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hhzmy.main.YanzhengActivity">
+    <RelativeLayout
+        android:id="@+id/r1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F8F8F8"
+        android:paddingBottom="15dp"
+        android:paddingTop="15dp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/yanzhengfan"
+            android:paddingLeft="20dp"
+            android:src="@mipmap/ucwv_btn_back"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textSize="23sp"
+            android:text="验证手机号"/>
+    </RelativeLayout>
+    <View
+        android:layout_below="@id/r1"
+        android:layout_width="match_parent"
+        android:layout_height="13dp"
+        android:id="@+id/view1"
+        android:background="#F2F2F2"/>
+            <LinearLayout
+                android:id="@+id/ll1"
+                android:layout_below="@id/view1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:textSize="20sp"
+                    android:layout_weight="0.1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="手机号"/>
+
+                <com.hhzmy.main.com.hhzmy.view.ClearEditText
+                    android:drawableRight="@mipmap/a2"
+                    android:id="@+id/yanphone"
+                    android:layout_weight="0.9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:maxLines="1"
+                    android:maxLength="13"
+
+                    android:hint="请输入手机号"/>
+
+            </LinearLayout>
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_below="@id/ll1"
+        />
+
+    <LinearLayout
+        android:id="@+id/ll2"
+        android:layout_below="@id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:textSize="20sp"
+            android:layout_weight="0.1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="验证码"/>
+        <com.hhzmy.main.com.hhzmy.view.ClearEditText
+            android:drawableRight="@mipmap/a2"
+            android:layout_weight="0.7"
+            android:visibility="visible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:maxLength="13"
+            android:cursorVisible="true"
+            android:maxLines="1"
+            android:hint="请输入图形验证码"/>
+        <ImageView
+            android:id="@+id/yanimg"
+            android:layout_weight="0.2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_launcher"/>
+
+    </LinearLayout>
+    <View
+
+        android:id="@+id/view3"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_below="@id/ll2"
+        />
+
+    <Button
+        android:layout_below="@id/view3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/yanzhengtiao"
+        android:background="#CACACA"
+        android:text="下一步"
+        />
+
+ <LinearLayout
+     android:layout_below="@id/yanzhengtiao"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:orientation="horizontal">
+     <CheckBox
+         android:layout_marginTop="20dp"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:checked="false"
+         android:id="@+id/checked"
+
+         />
+     <TextView
+         android:layout_marginLeft="25dp"
+         android:layout_marginTop="20dp"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:text="同意苏宁易购会员章程和支付宝协议"
+        />
+
+ </LinearLayout>
+
+
+
+
+
+
+
+
+</RelativeLayout>
